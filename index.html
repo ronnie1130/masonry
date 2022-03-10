@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.3.0/animate.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="grid">
+        <div class="grid-item">
+          <img src="images/1.jpeg" alt="" />
+        </div>
+        <div class="grid-item">
+          <img src="images/2.jpeg" alt="" />
+        </div>
+        <div class="grid-item">
+          <img src="images/3.jpeg" alt="" />
+        </div>
+        <div class="grid-item">
+          <img src="images/4.jpeg" alt="" />
+        </div>
+        <div
+          class="grid-item wow bounceIn"
+          data-wow-duration="1s"
+          data-wow-delay="1s"
+        >
+          <img src="images/5.jpeg" alt="" />
+        </div>
+        <div
+          class="grid-item wow bounceIn"
+          data-wow-duration="1s"
+          data-wow-delay="1s"
+        >
+          <img src="images/6.jpeg" alt="" />
+        </div>
+        <div
+          class="grid-item wow bounceIn"
+          data-wow-duration="1s"
+          data-wow-delay="1s"
+        >
+          <img src="images/7.jpeg" alt="" />
+        </div>
+        <div
+          class="grid-item wow bounceIn"
+          data-wow-duration="1s"
+          data-wow-delay="1s"
+        >
+          <img src="images/8.jpeg" alt="" />
+        </div>
+        <div
+          class="grid-item wow bounceIn"
+          data-wow-duration="1s"
+          data-wow-delay="1s"
+        >
+          <img src="images/9.jpeg" alt="" />
+        </div>
+        <div
+          class="grid-item wow bounceIn"
+          data-wow-duration="1s"
+          data-wow-delay="1s"
+        >
+          <img src="images/10.jpeg" alt="" />
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+  <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      $('.grid').masonry({
+        columnWidth: 280,
+        itemSelector: '.grid-item',
+      });
+    });
+    //At the document ready event
+    $(function () {
+      new WOW().init();
+    });
+
+    //also at the window load event
+    $(window).on('load', function () {
+      new WOW().init();
+    });
+  </script>
+</html>
